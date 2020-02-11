@@ -4,7 +4,9 @@ import {
     Text,
     StyleSheet,
     Image,
-    TouchableOpacity
+    TouchableOpacity,
+    ScrollView,
+    SafeAreaView
 } from 'react-native';
 
 import { GoalDetailEntries } from '../static/goalDetailEntries';
@@ -25,11 +27,15 @@ const GoalDetailScreen = props => {
             //resizeMode="contain"
             />
             {/* image source should come from clicked GoalList*/}
-            <Text style={styles.TextArea}>
-                <Text style={styles.Title}>{GoalDetailEntries.Hunger.title}</Text>{'\n'}{'\n'}
-                <Text style={styles.Date}>{GoalDetailEntries.Hunger.date}</Text>{'\n'}{'\n'}
-                <Text >{GoalDetailEntries.Hunger.description}</Text>
-            </Text>
+            <SafeAreaView style={styles.TextContainer}>
+                <ScrollView>
+                    <Text style={styles.TextArea}>
+                        <Text style={styles.Title}>{GoalDetailEntries.Hunger.title}</Text>{'\n'}{'\n'}
+                        <Text style={styles.Date}>{GoalDetailEntries.Hunger.date}</Text>{'\n'}{'\n'}
+                        <Text >{GoalDetailEntries.Hunger.description}</Text>
+                    </Text>
+                </ScrollView>
+            </SafeAreaView>
             <TouchableOpacity activeOpacity={0.6} onPress={''} style={styles.ButtonContainer}>
                 <View style={styles.Button}>
                     <Text style={styles.ButtonText}>捐助</Text>
@@ -51,11 +57,14 @@ const styles = StyleSheet.create({
     Date: {
         fontSize: 12,
     },
-    TextArea: {
+    TextContainer:{
         flex: 7,
-        fontSize: 16,
         marginVertical: 20,
         marginHorizontal: 18
+    },
+    TextArea: {
+        fontSize: 16,
+        
     },
     ButtonContainer: {
         flex: 1
@@ -66,7 +75,7 @@ const styles = StyleSheet.create({
         paddingHorizontal: 30,
         marginHorizontal: 18,
         borderRadius: 2,
-        alignItems:'center'
+        alignItems: 'center'
     },
     ButtonText: {
         color: 'white',

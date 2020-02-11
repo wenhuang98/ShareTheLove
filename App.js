@@ -14,8 +14,8 @@ export default function App() {
       {/* <CarouselExamplesScreen />
         
         <Footer /> */}
-      {/* <GoalDetailScreen /> */}
-      <ThankYouScreen/>
+      <GoalDetailScreen />
+      {/* <ThankYouScreen/> */}
 
     </View>
   );
