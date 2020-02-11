@@ -5,16 +5,17 @@ import CarouselExamplesScreen from './screens/CarouselExamplesScreen';
 import Footer from './components/Footer';
 import GoalDetailScreen from './screens/GoalDetailScreen';
 import ThankYouScreen from './screens/ThankYouScreen';
+import GoalListScreen from './screens/GoalsListScreen';
 
 export default function App() {
   return (
     <View style={styles.screen}>
 
-      {/*  <PaymentScreen></PaymentScreen>  */}
-      {/* <CarouselExamplesScreen />
-        
-        <Footer /> */}
-      <GoalDetailScreen />
+       {/* <PaymentScreen></PaymentScreen>  */}
+      {/* <CarouselExamplesScreen /> */}
+        <GoalListScreen/>
+        {/* <Footer /> */}
+      {/* <GoalDetailScreen /> */}
       {/* <ThankYouScreen/> */}
 
     </View>

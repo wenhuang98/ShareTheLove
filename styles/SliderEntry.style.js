@@ -1,5 +1,7 @@
 import { StyleSheet, Dimensions, Platform } from 'react-native';
 import { colors } from './index.style';
+import Colors from '../constants/colors';
+
 
 const IS_IOS = Platform.OS === 'ios';
 const { width: viewportWidth, height: viewportHeight } = Dimensions.get('window');
@@ -9,7 +11,7 @@ function wp (percentage) {
     return Math.round(value);
 }
 
-const slideHeight = viewportHeight * 0.36;
+const slideHeight = viewportHeight * 0.7;//0.36
 const slideWidth = wp(75);
 const itemHorizontalMargin = wp(2);
 
@@ -38,7 +40,7 @@ export default StyleSheet.create({
         borderRadius: entryBorderRadius
     },
     imageContainer: {
-        flex: 1,
+        flex: 4,
         marginBottom: IS_IOS ? 0 : -1, // Prevent a random Android rendering issue
         backgroundColor: 'white',
         borderTopLeftRadius: entryBorderRadius,
@@ -67,6 +69,7 @@ export default StyleSheet.create({
         backgroundColor: colors.black
     },
     textContainer: {
+        flex: 1,
         justifyContent: 'center',
         paddingTop: 20 - entryBorderRadius,
         paddingBottom: 20,
@@ -91,9 +94,25 @@ export default StyleSheet.create({
         marginTop: 6,
         color: colors.gray,
         fontSize: 12,
-        fontStyle: 'italic'
+        fontStyle: 'italic',
+        flex:1
     },
     subtitleEven: {
         color: 'rgba(255, 255, 255, 0.7)'
+    },
+    ButtonContainer: {
+        flex: 1
+    },
+    Button: {
+        backgroundColor: Colors.buttonGive,
+        paddingVertical: 12,
+        paddingHorizontal: 30,
+        marginHorizontal: 18,
+        borderRadius: 2,
+        alignItems: 'center'
+    },
+    ButtonText: {
+        color: 'white',
+        fontSize: 18,
     }
 });
