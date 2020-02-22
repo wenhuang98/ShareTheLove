@@ -11,9 +11,9 @@ export default function App() {
   return (
     <View style={styles.screen}>
 
-       {/* <PaymentScreen></PaymentScreen>  */}
+       <PaymentScreen></PaymentScreen> 
       {/* <CarouselExamplesScreen /> */}
-        <GoalListScreen/>
+        {/* <GoalListScreen/> */}
         {/* <Footer /> */}
       {/* <GoalDetailScreen /> */}
       {/* <ThankYouScreen/> */}

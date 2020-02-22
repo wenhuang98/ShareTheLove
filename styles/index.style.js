@@ -12,26 +12,31 @@ export default StyleSheet.create({
         flex: 1,
         backgroundColor: colors.black
     },
-    container: {
+    container: {//Goal List
         flex: 1,
         backgroundColor: colors.background1,
         justifyContent: 'center',
         alignItems: 'center'
     },
+    paymentContainer: {
+        flex: 1,
+        backgroundColor: colors.background1,
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'stretch',
+    },
     gradient: {
         ...StyleSheet.absoluteFillObject
     },
     scrollview: {
-        flex: 1
+        flex: 3
     },
     paymentCardsContainer: {
-        paddingVertical: 30,
-        flex: 1,
+        flex: 3,
         justifyContent: 'center',
         alignItems: 'center'
-
     },
-    exampleContainer: {
+    goalListContainer: {
         paddingVertical: 30,
     },
     exampleContainerDark: {

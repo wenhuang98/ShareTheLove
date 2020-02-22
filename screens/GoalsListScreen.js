@@ -34,7 +34,7 @@ export default class GoalListScreen extends Component {
         const { slider1ActiveSlide } = this.state;
 
         return (
-            <View style={styles.exampleContainer}>
+            <View style={styles.goalListContainer}>
                 <Carousel
                   ref={c => this._slider1Ref = c}
                   data={ENTRIES1}
