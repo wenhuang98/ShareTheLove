@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import { ParallaxImage } from 'react-native-snap-carousel';
 import styles from '../styles/SliderEntry.style';
 
+
 export default class SliderEntry extends Component {
 
     static propTypes = {
@@ -12,6 +13,7 @@ export default class SliderEntry extends Component {
         parallax: PropTypes.bool,
         parallaxProps: PropTypes.object
     };
+
 
     get image() {
         const { data: { illustration }, parallax, parallaxProps, even } = this.props;
@@ -36,7 +38,6 @@ export default class SliderEntry extends Component {
 
     render() {
         const { data: { title, subtitle }, even } = this.props;
-
         const uppercaseTitle = title ? (
             <Text
                 style={[styles.title, even ? styles.titleEven : {}]}
@@ -50,7 +51,7 @@ export default class SliderEntry extends Component {
             <TouchableOpacity
                 activeOpacity={1}
                 style={styles.slideInnerContainer}
-                onPress={() => { alert(`You've clicked '${title}'`); }}
+                onPress={() => this.props.navigation.navigate({routeName: 'GoalDetail'})}
             >
                 <View style={styles.shadow} />
                 <View style={[styles.imageContainer, even ? styles.imageContainerEven : {}]}>
