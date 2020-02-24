@@ -13,7 +13,9 @@ import { GoalDetailEntries } from '../static/goalDetailEntries';
 import Colors from '../constants/colors';
 
 const GoalDetailScreen = props => {
-
+    console.log('in goal detail');
+    //console.log(props.navagation.getParam('goalId'))
+    console.log(props.navigation.state.params.goalId);
     return (
         <View style={{
             flex: 1,

@@ -23,11 +23,12 @@ export default class GoalListScreen extends Component {
     }
 
     _renderItemWithParallax ({item, index}, parallaxProps) {
-        console.log(this);
+        //console.log(this);
         return (
             <SliderEntry
               data={item}
               even={(index + 1) % 2 === 0}
+              index={index}
               parallax={true}
               parallaxProps={parallaxProps}
               navigation={this.props.navigation}
@@ -108,7 +109,6 @@ export default class GoalListScreen extends Component {
                     >
                         { example1 }
                     </ScrollView>
-                    <Button title="test" onPress={() => this.props.navigation.navigate({routeName: 'GoalDetail'})} />
                 </View>
             </SafeAreaView>
         );
