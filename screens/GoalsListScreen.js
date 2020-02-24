@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Platform, View, ScrollView, Text, StatusBar, SafeAreaView , StyleSheet} from 'react-native';
+import { Platform, View, ScrollView, Text, StatusBar, SafeAreaView , StyleSheet, Button} from 'react-native';
 import {LinearGradient} from 'expo-linear-gradient';
 import Carousel, { Pagination } from 'react-native-snap-carousel';
 import { sliderWidth, itemWidth } from '../styles/SliderEntry.style';
@@ -7,6 +7,8 @@ import SliderEntry from '../components/SliderEntry';
 import styles, { colors } from '../styles/index.style';
 import { ENTRIES1, ENTRIES2 } from '../static/entries';
 import { scrollInterpolators, animatedStyles } from '../utils/animations';
+
+
 
 //entries
 const SLIDER_1_FIRST_ITEM = 1;
@@ -17,15 +19,19 @@ export default class GoalListScreen extends Component {
         this.state = {
             slider1ActiveSlide: SLIDER_1_FIRST_ITEM
         };
+        //console.log(this);
     }
 
     _renderItemWithParallax ({item, index}, parallaxProps) {
+        //console.log(this);
         return (
             <SliderEntry
               data={item}
               even={(index + 1) % 2 === 0}
+              index={index}
               parallax={true}
               parallaxProps={parallaxProps}
+              navigation={this.props.navigation}
             />
         );
     }
@@ -33,12 +39,13 @@ export default class GoalListScreen extends Component {
     mainExample (number, title) {
         const { slider1ActiveSlide } = this.state;
 
+
         return (
             <View style={styles.goalListContainer}>
                 <Carousel
                   ref={c => this._slider1Ref = c}
                   data={ENTRIES1}
-                  renderItem={this._renderItemWithParallax}
+                  renderItem={this._renderItemWithParallax.bind(this)}
                   sliderWidth={sliderWidth}
                   itemWidth={itemWidth}
                   hasParallaxImages={true}
