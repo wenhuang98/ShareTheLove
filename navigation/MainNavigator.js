@@ -7,10 +7,19 @@ import GoalDetailScreen from '../screens/GoalDetailScreen';
 import ThankYouScreen from '../screens/ThankYouScreen';
 import GoalListScreen from '../screens/GoalsListScreen';
 
+const navigationOptions = {
+  headerTransparent: true,
+  headerTitle: '',
+  headerTintColor: 'white',
+  headerBackTitle: ' '
+}
+
 const MainNavigator = createStackNavigator({
   GoalList: GoalListScreen,
   GoalDetail: GoalDetailScreen,
   ThankYou: ThankYouScreen
+},{
+  defaultNavigationOptions: navigationOptions
 });
 
 export default createAppContainer(MainNavigator);
