@@ -59,13 +59,7 @@ export default class PaymentSliderEntry extends Component {
                 </View>
                 <View style={[styles.textContainer, even ? styles.textContainerEven : {}]}>
                     {uppercaseTitle}
-                    <Text
-                        style={[styles.subtitle, even ? styles.subtitleEven : {}]}
-                        numberOfLines={2}
-                    >
-                        {subtitle}
-                    </Text>
-                    
+             
                 </View>
 
             </TouchableOpacity>

@@ -26,9 +26,9 @@ export const ENTRIES1 = [
     },
 ];
 
-export const ENTRIES2 = [
+export const ENTRIES2 = [//payment 
     {
-        title: 'Favourites landscapes 1',
+        title: '捐助50元',
         subtitle: 'Lorem ipsum dolor sit amet',
         illustration: 'https://i.imgur.com/SsJmZ9jl.jpg'
     },
