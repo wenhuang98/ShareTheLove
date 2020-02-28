@@ -37,7 +37,7 @@ export default class SliderEntry extends Component {
     }
 
     render() {
-        const { data: { title, subtitle }, even } = this.props;
+        const { data: { title, subtitle, illustration }, even } = this.props;
         const uppercaseTitle = title ? (
             <Text
                 style={[styles.title, even ? styles.titleEven : {}]}
@@ -47,6 +47,7 @@ export default class SliderEntry extends Component {
             </Text>
         ) : false;
 
+
         return (
             <TouchableOpacity
                 activeOpacity={1}
@@ -54,7 +55,8 @@ export default class SliderEntry extends Component {
                 onPress={() => this.props.navigation.navigate({
                     routeName: 'GoalDetail',
                     params: {
-                        goalId: this.props.index 
+                        goalId: this.props.index,
+                        illustration:  illustration
                     }
             })}
             >
@@ -71,7 +73,16 @@ export default class SliderEntry extends Component {
                     >
                         {subtitle}
                     </Text>
-                    <TouchableOpacity activeOpacity={0.6} style={styles.ButtonContainer}>
+                    <TouchableOpacity 
+                        activeOpacity={0.6} 
+                        style={styles.ButtonContainer}
+                        onPress={() => this.props.navigation.navigate({
+                            routeName: 'Payment',
+                            params: {
+                                goalId: this.props.index 
+                            }
+                    })}    
+                    >
                         <View style={styles.Button}>
                             <Text style={styles.ButtonText}>捐助</Text>
                         </View>
