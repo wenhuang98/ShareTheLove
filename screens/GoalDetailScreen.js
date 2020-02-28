@@ -19,6 +19,7 @@ const GoalDetailScreen = props => {
     //console.log(props.navigation.state.params.illustration);
 
     const illustration = props.navigation.state.params.illustration;
+    const goalId = props.navigation.state.params.goalId;
     //console.log (illustration)
     return (
         <View style={{
@@ -42,11 +43,20 @@ const GoalDetailScreen = props => {
                     </Text>
                 </ScrollView>
             </SafeAreaView>
-            <TouchableOpacity activeOpacity={0.6} style={styles.ButtonContainer}>
-                <View style={styles.Button}>
-                    <Text style={styles.ButtonText}>捐助</Text>
-                </View>
-            </TouchableOpacity>
+            <TouchableOpacity 
+                        activeOpacity={0.6} 
+                        style={styles.ButtonContainer}
+                        onPress={() => props.navigation.navigate({
+                            routeName: 'Payment',
+                            params: {
+                                goalId: goalId
+                            }
+                    })}    
+                    >
+                        <View style={styles.Button}>
+                            <Text style={styles.ButtonText}>捐助</Text>
+                        </View>
+                    </TouchableOpacity>
         </View>
     );
 };

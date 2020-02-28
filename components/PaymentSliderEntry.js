@@ -37,8 +37,6 @@ export default class PaymentSliderEntry extends Component {
     render() {
         const { data: { title, subtitle }, even } = this.props;
 
-        console.log('a payment slider');
-
         const uppercaseTitle = title ? (
             <Text
                 style={[styles.title, even ? styles.titleEven : {}]}

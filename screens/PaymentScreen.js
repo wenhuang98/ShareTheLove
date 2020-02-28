@@ -58,6 +58,11 @@ export default class PaymentScreen extends Component {
     render() {
         const example2 = this.momentumExample(2, 'Momentum | Left-aligned | Active animation');
 
+        console.log('in payment');
+        //console.log(this.props.navagation.getParam('goalId'))
+        console.log(this.props.navigation.state.params.goalId);
+
+
         return (
             <SafeAreaView style={styles.safeArea}>
                 <View style={styles.paymentContainer}>
