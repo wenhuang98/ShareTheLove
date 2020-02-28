@@ -29,32 +29,22 @@ export const ENTRIES1 = [
 export const ENTRIES2 = [//payment 
     {
         title: '捐助50元',
-        subtitle: 'Lorem ipsum dolor sit amet',
-        illustration: 'https://i.imgur.com/SsJmZ9jl.jpg'
+        illustration: 'https://image.freepik.com/free-vector/hands-holding-kawaii-world-help-donate-charity_24908-30229.jpg'
     },
     {
-        title: 'Favourites landscapes 2',
-        subtitle: 'Lorem ipsum dolor sit amet et nuncat mergitur',
-        illustration: 'https://i.imgur.com/5tj6S7Ol.jpg'
+        title: '捐助100元',
+        illustration: 'https://cdn2.vectorstock.com/i/1000x1000/80/96/multiethnic-hands-heart-love-kawaii-donate-charity-vector-21608096.jpg'
     },
     {
-        title: 'Favourites landscapes 3',
-        subtitle: 'Lorem ipsum dolor sit amet et nuncat',
-        illustration: 'https://i.imgur.com/pmSqIFZl.jpg'
+        title: '捐助500元',
+        illustration: 'https://cdn4.vectorstock.com/i/1000x1000/81/13/kawaii-world-and-hand-love-heart-donate-charity-vector-21608113.jpg'
     },
     {
-        title: 'Favourites landscapes 4',
-        subtitle: 'Lorem ipsum dolor sit amet et nuncat mergitur',
-        illustration: 'https://i.imgur.com/cA8zoGel.jpg'
+        title: '捐助1000元',
+        illustration: 'https://cdn3.vectorstock.com/i/1000x1000/81/07/kawaii-container-glass-box-heart-love-coins-donate-vector-21608107.jpg'
     },
     {
-        title: 'Favourites landscapes 5',
-        subtitle: 'Lorem ipsum dolor sit amet',
-        illustration: 'https://i.imgur.com/pewusMzl.jpg'
+        title: '填寫捐助金額',
+        illustration: 'https://cdn5.vectorstock.com/i/1000x1000/80/64/hands-multiethnic-world-kawaii-love-donate-charity-vector-21608064.jpg'
     },
-    {
-        title: 'Favourites landscapes 6',
-        subtitle: 'Lorem ipsum dolor sit amet et nuncat',
-        illustration: 'https://i.imgur.com/l49aYS3l.jpg'
-    }
 ];

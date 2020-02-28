@@ -85,7 +85,8 @@ export default StyleSheet.create({
         color: colors.gray,
         fontSize: 16,
         fontWeight: 'bold',
-        letterSpacing: 0.5
+        letterSpacing: 0.5,
+        textAlign:'center'
     },
     titleEven: {
         color: 'white'

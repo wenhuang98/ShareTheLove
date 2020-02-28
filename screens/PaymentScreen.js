@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, ScrollView, Text, StatusBar, SafeAreaView, StyleSheet, TouchableOpacity } from 'react-native';
+import { View, ScrollView, Text, StatusBar, SafeAreaView, StyleSheet, TouchableOpacity,Image, ImageBackground } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import Carousel, { Pagination } from 'react-native-snap-carousel';
 import { sliderWidth, itemWidth } from '../styles/PaymentSliderEntry.style';
@@ -36,7 +36,7 @@ export default class PaymentScreen extends Component {
                     inactiveSlideScale={0.95}
                     inactiveSlideOpacity={1}
                     enableMomentum={true}
-                    activeSlideAlignment={'start'}
+                    activeSlideAlignment={'center'}
                     containerCustomStyle={styles.slider}
                     contentContainerCustomStyle={styles.sliderContentContainer}
                     activeAnimationType={'spring'}
@@ -67,29 +67,33 @@ export default class PaymentScreen extends Component {
         return (
             <SafeAreaView style={styles.safeArea}>
                 <View style={styles.paymentContainer}>
-                    <StatusBar
-                        translucent={true}
-                        backgroundColor={'rgba(0, 0, 0, 0.3)'}
-                        barStyle={'light-content'}
-                    />
-                    <View style={paymentStyles.TextArea}>
-                        <Text>
-                            <Text style={paymentStyles.Title}>你小小的幫助，可以為他們的生活帶來巨大的改變</Text>{'\n'}{'\n'}
-                        </Text>
-                    </View>
-                    <View style={styles.scrollview}>
-                        <ScrollView
-                            scrollEventThrottle={200}
-                            directionalLockEnabled={true}
-                        >
-                            {example2}
-                        </ScrollView>
-                    </View>
-                    <TouchableOpacity activeOpacity={0.6} style={paymentStyles.ButtonContainer}>
-                        <View style={paymentStyles.Button}>
-                            <Text style={paymentStyles.ButtonText}>捐款</Text>
+                    <ImageBackground style={styles.backgroundImage} source={{uri:'https://cw1.tw/CW/opinion/images/common/old/shutterstock_713914813.jpg'}}>
+                        <View style={styles.overlay}>
+                        <StatusBar
+                            translucent={true}
+                            backgroundColor={'rgba(0, 0, 0, 0.3)'}
+                            barStyle={'light-content'}
+                        />
+                        <View style={paymentStyles.TextArea}>
+                            <Text>
+                                <Text style={paymentStyles.Title}>你小小的幫助，可以為他們的生活帶來巨大的改變</Text>{'\n'}{'\n'}
+                            </Text>
                         </View>
-                    </TouchableOpacity>
+                        <View style={styles.scrollview}>
+                            <ScrollView
+                                scrollEventThrottle={200}
+                                directionalLockEnabled={true}
+                            >
+                                {example2}
+                            </ScrollView>
+                        </View>
+                        <TouchableOpacity activeOpacity={0.6} style={paymentStyles.ButtonContainer}>
+                            <View style={paymentStyles.Button}>
+                                <Text style={paymentStyles.ButtonText}>捐款</Text>
+                            </View>
+                        </TouchableOpacity>
+                        </View>
+                    </ImageBackground>
                 </View>
             </SafeAreaView>
         );

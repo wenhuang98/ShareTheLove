@@ -20,10 +20,20 @@ export default StyleSheet.create({
     },
     paymentContainer: {
         flex: 1,
-        backgroundColor: colors.background1,
+        //backgroundColor: colors.gray,
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'stretch',
+    },
+    backgroundImage:{
+        flex: 1,
+        width: '100%',
+        height: '100%',
+        justifyContent: "center",
+        alignItems: "center",
+    },
+    overlay:{
+        backgroundColor:'rgba(50,50,50,0.7)',
     },
     gradient: {
         ...StyleSheet.absoluteFillObject

@@ -39,7 +39,7 @@ export default class PaymentSliderEntry extends Component {
 
         const uppercaseTitle = title ? (
             <Text
-                style={[styles.title, even ? styles.titleEven : {}]}
+                style={styles.title}
                 numberOfLines={2}
             >
                 {title.toUpperCase()}
@@ -55,9 +55,9 @@ export default class PaymentSliderEntry extends Component {
                 <View style={styles.shadow} />
                 <View style={[styles.imageContainer, even ? styles.imageContainerEven : {}]}>
                     {this.image}
-                    <View style={[styles.radiusMask, even ? styles.radiusMaskEven : {}]} />
+                    <View style={styles.radiusMask} />
                 </View>
-                <View style={[styles.textContainer, even ? styles.textContainerEven : {}]}>
+                <View style={styles.textContainer}>
                     {uppercaseTitle}
              
                 </View>
