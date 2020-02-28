@@ -71,7 +71,7 @@ export default class SliderEntry extends Component {
                     >
                         {subtitle}
                     </Text>
-                    <TouchableOpacity activeOpacity={0.6} onPress={''} style={styles.ButtonContainer}>
+                    <TouchableOpacity activeOpacity={0.6} style={styles.ButtonContainer}>
                         <View style={styles.Button}>
                             <Text style={styles.ButtonText}>捐助</Text>
                         </View>

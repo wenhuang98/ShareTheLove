@@ -38,7 +38,7 @@ const GoalDetailScreen = props => {
                     </Text>
                 </ScrollView>
             </SafeAreaView>
-            <TouchableOpacity activeOpacity={0.6} onPress={''} style={styles.ButtonContainer}>
+            <TouchableOpacity activeOpacity={0.6} style={styles.ButtonContainer}>
                 <View style={styles.Button}>
                     <Text style={styles.ButtonText}>捐助</Text>
                 </View>
