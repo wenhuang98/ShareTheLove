@@ -12,10 +12,14 @@ import {
 import { GoalDetailEntries } from '../static/goalDetailEntries';
 import Colors from '../constants/colors';
 
+
 const GoalDetailScreen = props => {
     console.log('in goal detail');
     //console.log(props.navagation.getParam('goalId'))
-    console.log(props.navigation.state.params.goalId);
+    //console.log(props.navigation.state.params.illustration);
+
+    const illustration = props.navigation.state.params.illustration;
+    //console.log (illustration)
     return (
         <View style={{
             flex: 1,
@@ -25,7 +29,7 @@ const GoalDetailScreen = props => {
         }}>
             <Image
                 style={styles.Image}
-                source={GoalDetailEntries.Hunger.image}
+                source={{ uri: illustration }}
             //resizeMode="contain"
             />
             {/* image source should come from clicked GoalList*/}

@@ -16,10 +16,10 @@ const navigationOptions = {
 }
 
 const MainNavigator = createStackNavigator({
-  Payment: PaymentScreen,
   GoalList: GoalListScreen,
   GoalDetail: GoalDetailScreen,
-  ThankYou: ThankYouScreen
+  ThankYou: ThankYouScreen,
+  Payment: PaymentScreen
 },{
   defaultNavigationOptions: navigationOptions
 });

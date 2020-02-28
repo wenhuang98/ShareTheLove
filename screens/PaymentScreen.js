@@ -1,23 +1,16 @@
 import React, { Component } from 'react';
 import { View, ScrollView, Text, StatusBar, SafeAreaView, StyleSheet, TouchableOpacity } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
-import Carousel, { Pagination } from 'react-native-snap-carousel';
+import Carousel from 'react-native-snap-carousel';
 import { sliderWidth, itemWidth } from '../styles/PaymentSliderEntry.style';
 import PaymentSliderEntry from '../components/PaymentSliderEntry';
 import styles, { colors } from '../styles/index.style';
-import { ENTRIES1, ENTRIES2 } from '../static/entries';
-import { scrollInterpolators, animatedStyles } from '../utils/animations';
+import { ENTRIES2 } from '../static/entries';
 import Colors from '../constants/colors';
-
-
-const SLIDER_1_FIRST_ITEM = 1;
 
 export default class PaymentScreen extends Component {
     constructor(props) {
         super(props);
-        this.state = {
-            slider1ActiveSlide: SLIDER_1_FIRST_ITEM
-        };
     }
 
     _renderItem({ item, index }) {
@@ -36,6 +29,7 @@ export default class PaymentScreen extends Component {
                     inactiveSlideScale={0.95}
                     inactiveSlideOpacity={1}
                     enableMomentum={true}
+                    removeClippedSubviews={false}
                     activeSlideAlignment={'start'}
                     containerCustomStyle={styles.slider}
                     contentContainerCustomStyle={styles.sliderContentContainer}
