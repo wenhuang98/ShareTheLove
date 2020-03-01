@@ -31,7 +31,6 @@ export default class PaymentScreen extends Component {
                     enableMomentum={true}
                     activeSlideAlignment={'center'}
                     removeClippedSubviews={false}
-                    activeSlideAlignment={'start'}
                     containerCustomStyle={styles.slider}
                     contentContainerCustomStyle={styles.sliderContentContainer}
                     activeAnimationType={'spring'}
