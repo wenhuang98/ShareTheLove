@@ -9,8 +9,8 @@ import {
     SafeAreaView
 } from 'react-native';
 
-import { GoalDetailEntries } from '../static/goalDetailEntries';
 import Colors from '../constants/colors';
+import { ENTRIES1 } from '../static/entries';
 
 
 const GoalDetailScreen = props => {
@@ -20,7 +20,8 @@ const GoalDetailScreen = props => {
 
     const illustration = props.navigation.state.params.illustration;
     const goalId = props.navigation.state.params.goalId;
-    //console.log (illustration)
+    const entryID = goalId - 2;
+    console.log(goalId)//It starts with 2
     return (
         <View style={{
             flex: 1,
@@ -37,26 +38,26 @@ const GoalDetailScreen = props => {
             <SafeAreaView style={styles.TextContainer}>
                 <ScrollView>
                     <Text style={styles.TextArea}>
-                        <Text style={styles.Title}>{GoalDetailEntries.Hunger.title}</Text>{'\n'}{'\n'}
-                        <Text style={styles.Date}>{GoalDetailEntries.Hunger.date}</Text>{'\n'}{'\n'}
-                        <Text >{GoalDetailEntries.Hunger.description}</Text>
+                        <Text style={styles.Title}>{ENTRIES1[entryID].title}</Text>{'\n'}{'\n'}
+                        <Text style={styles.Date}>{ENTRIES1[entryID].date}</Text>{'\n'}{'\n'}
+                        <Text >{ENTRIES1[entryID].description}</Text>
                     </Text>
                 </ScrollView>
             </SafeAreaView>
-            <TouchableOpacity 
-                        activeOpacity={0.6} 
-                        style={styles.ButtonContainer}
-                        onPress={() => props.navigation.navigate({
-                            routeName: 'Payment',
-                            params: {
-                                goalId: goalId
-                            }
-                    })}    
-                    >
-                        <View style={styles.Button}>
-                            <Text style={styles.ButtonText}>捐助</Text>
-                        </View>
-                    </TouchableOpacity>
+            <TouchableOpacity
+                activeOpacity={0.6}
+                style={styles.ButtonContainer}
+                onPress={() => props.navigation.navigate({
+                    routeName: 'Payment',
+                    params: {
+                        goalId: goalId
+                    }
+                })}
+            >
+                <View style={styles.Button}>
+                    <Text style={styles.ButtonText}>捐助</Text>
+                </View>
+            </TouchableOpacity>
         </View>
     );
 };
@@ -73,14 +74,14 @@ const styles = StyleSheet.create({
     Date: {
         fontSize: 12,
     },
-    TextContainer:{
+    TextContainer: {
         flex: 7,
         marginVertical: 20,
         marginHorizontal: 18
     },
     TextArea: {
         fontSize: 16,
-        
+
     },
     ButtonContainer: {
         flex: 1
