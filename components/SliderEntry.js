@@ -3,6 +3,7 @@ import { View, Text, Image, TouchableOpacity } from 'react-native';
 import PropTypes from 'prop-types';
 import { ParallaxImage } from 'react-native-snap-carousel';
 import styles from '../styles/SliderEntry.style';
+import { ProgressBar, Colors } from 'react-native-paper';
 
 
 export default class SliderEntry extends Component {
@@ -56,9 +57,9 @@ export default class SliderEntry extends Component {
                     routeName: 'GoalDetail',
                     params: {
                         goalId: this.props.index,
-                        illustration:  illustration
+                        illustration: illustration
                     }
-            })}
+                })}
             >
                 <View style={styles.shadow} />
                 <View style={[styles.imageContainer, even ? styles.imageContainerEven : {}]}>
@@ -73,15 +74,23 @@ export default class SliderEntry extends Component {
                     >
                         {subtitle}
                     </Text>
-                    <TouchableOpacity 
-                        activeOpacity={0.6} 
+                     <View style={styles.ProgressBarContainer}>
+                        <Text style={styles.ProgressPercentage}>48%</Text>
+                        <View style={styles.ProgressBarView}>
+                            <ProgressBar style={{}} progress={0.48} color={Colors.blue400} />
+                        </View>
+                    </View> 
+                    
+
+                    <TouchableOpacity
+                        activeOpacity={0.6}
                         style={styles.ButtonContainer}
                         onPress={() => this.props.navigation.navigate({
                             routeName: 'Payment',
                             params: {
-                                goalId: this.props.index 
+                                goalId: this.props.index
                             }
-                    })}    
+                        })}
                     >
                         <View style={styles.Button}>
                             <Text style={styles.ButtonText}>捐助</Text>

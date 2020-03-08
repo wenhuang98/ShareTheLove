@@ -6,7 +6,7 @@ import Colors from '../constants/colors';
 const IS_IOS = Platform.OS === 'ios';
 const { width: viewportWidth, height: viewportHeight } = Dimensions.get('window');
 
-function wp (percentage) {
+function wp(percentage) {
     const value = (percentage * viewportWidth) / 100;
     return Math.round(value);
 }
@@ -95,13 +95,30 @@ export default StyleSheet.create({
         color: colors.gray,
         fontSize: 12,
         fontStyle: 'italic',
-        flex:1
+        flex: 1
     },
     subtitleEven: {
         color: 'rgba(255, 255, 255, 0.7)'
     },
+    ProgressBarContainer: {
+        flex: 1,
+        //alignItems:'stretch',
+        //alignContent:'space-around',
+        flexDirection: 'row',
+        justifyContent: 'space-around',
+        marginHorizontal: 18,
+    },
+    ProgressPercentage: {
+        flex: 1.5,
+        color: 'gray',
+        marginRight: 6
+    },
+    ProgressBarView: {
+        flex: 10,
+        marginTop: 5
+    },
     ButtonContainer: {
-        flex: 1
+        flex: 2
     },
     Button: {
         backgroundColor: Colors.buttonGive,
