@@ -3,37 +3,52 @@ export const ENTRIES1 = [
         title: '顏損家庭的願望：重回平凡生活',
         subtitle: '陽光社會福利基金會',
         illustration: 'https://img.ltn.com.tw/Upload/liveNews/BigPic/600_1695594_2.jpg',
-        date:'Dec 11',
-        description: 'TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT. The United Nations had set a target for developing countries around the world to cut the proportion of children who suffer from hunger in half by 2015 from 1990 levels. It is true that childhood hunger has improved since its peak in 1985. However, insufficient progress has been made, and only five percent of the developing world is on track to meet the UN target. One in five infants and children are moderately or severely underweight, amounting to 110 million children around the world. Further, another 148 million are mildly underweight. The United Nations had set a target for developing countries around the world to cut the proportion of children who suffer from hunger in half by 2015 from 1990 levels. It is true that childhood hunger has improved since its peak in 1985. However, insufficient progress has been made, and only five percent of the developing world is on track to meet the UN target. One in five infants and children are moderately or severely underweight, amounting to 110 million children around the world. Further, another 148 million are mildly underweight.'
+        date: 'Dec 11',
+        description: '由陽光治療師提供到宅護理、復健服務，指導其傷口照護方式，協助口癌病友增進日常生活功能與獨立自主能力；運用個別諮商、支持性及主題性團體活動，協助其重拾自信。'
+            + '\n\n提供醫療、生活及交通等經濟扶助，並協助經濟困頓而造成營養補充不足的口友，維持基本營養與體能，使其能全心投入治療流程；協助個案及家屬彼此經驗分享互相支持，紓解身心壓力。'
+            + '\n\n阿昌多年前罹患口癌之後，就無法再回到職場工作， 一家四口全靠太太擔任工廠操作員的薪水維生。 阿昌術後進食困難，僅能吃流質或軟質食物， 但家中的經濟狀況，讓他不敢奢望要喝高單價的營養品補充體力'
     },
     {
         title: '「翻轉照顧人生」募款計畫',
         subtitle: '中華民國家庭照顧者關懷總會',
         illustration: 'https://images.chinatimes.com/newsphoto/2019-09-10/900/N21A00_P_01_04.jpg',
-        date:'Dec 11',
-        description:'翻轉照顧人生'
+        date: 'Dec 11',
+        description: '高齡化浪潮襲來，我國每七人中就有一名老人，你我都可能成為家庭照顧者！ 家庭照顧是場看不見終點的馬拉松，平均長達9.9年、每天13.6小時、一年365天無法放下沈重的壓力!!家總邀請您一起幫助家庭照顧者「翻轉照顧」，創造「人生劇場」！'
+            + '\n\n二成家庭照顧者因為照顧無法就醫，影響健康'
+            + '\n\n愛子照顧90歲失智又臥床的母親，但日前不慎摔倒骨折，必須休養半年，但媽媽怎麼辦？「自己是病人，卻必須照顧病人」，誰能幫助她？'
+            + '\n\n阿正照顧失智又帶著簍管的母親，被醫師診斷出疝氣需要開刀休養兩個月，但喘息服務只有21天，阿正無奈決定「等痛到倒下再說吧」。'
+            + '\n\n任姊照顧中風臥床先生12年，翻身移位都得自己來，長期照顧導致「子宮脫垂」，卻因為沒有照顧替手遲遲未就醫，一拖再拖，最後一次急診，醫師下了最後通牒「再不治療，你會比先生先走」。'
+            + '\n\n有您的捐款，讓家庭照顧者的生活變得不一樣'
+            + '\n\n台灣近百萬家庭，受照顧負荷所煎熬，不僅被照顧者受苦，家庭照顧者的身心健康、經濟、工作、社會互動、生活等也大受影響。其中，有八成的照顧者表示身體健康曾受影響，卻被忽略，健康因此亮起紅燈，甚至有負向情緒行為的反應。'
     },
     {
         title: '陪偏鄉孩子耕耘未來',
         subtitle: '慈懷社會福利基金會',
         illustration: 'https://cdn.parenting.com.tw/flipedu/upload/2015_09_14_11_35_22.png',
-        date:'Dec 11',
-        description:'陪偏鄉孩子耕耘未來'
+        date: 'Dec 11',
+        description: '偏鄉的普遍現象…'
+            + '\n\n因為工作機會不多，年輕父母為了養家，不得不到外地工作，隔代教養、外籍配偶的情形非常多，經濟條件不佳、文化刺激又不足的情況普遍，造就了比例偏高的孩子出現發展落後的問題。'
+            + '\n\n加上孩子即便發展落後，「大雞慢啼」是阿公阿嬤普遍的觀念，家長、長輩也不願意給孩子貼標籤，更加深了篩檢、評估的困難。'
+            + '\n\n以雙溪、貢寮區來說，全區沒有任何一家可提供療育評估的醫院、更沒有醫療院所提供早期療育的物理、職能、口語等復健服務。有療育需求的幼兒，需要由阿公阿嬤舟車勞頓的帶著來到大台北的醫院接受治療，意願相對薄弱，更增加了『走出來』的困難。'
     },
     {
         title: '愛的馬拉松 終生支持心智障礙者',
         subtitle: '財團法人育成社會福利基金會',
         illustration: 'https://lecoin.cc/Medias/DonateProject/Banner/fd731999ae0d43b2aa21b46b1c0e655f.jpg',
-        date:'Dec 11',
-        description:'愛的馬拉松 終生支持心智障礙者'
+        date: 'Dec 11',
+        description: '育成致力提供0-6 歲發展遲緩兒童專業的早期療育服務；協助成人智障者的生活自理到職業技巧訓練，以及設立庇護工場及支持性就業服務，讓智障兒穩定工作；育成基金會也首創老年智障者專屬終老照護服務，能讓智障者安心養老，減輕老父母沉重的照顧負擔！育成 至今已幫助十多萬個家庭不再無助，憨兒們獲得適當的照顧與教育，生活得有尊嚴及快樂！'
+            + '\n\n育成急需穩定捐款挹注各項服務經費'
+            + '\n\n在育成，一年有六百多個智障兒長期接受照顧，數仟個家庭需要直接的協助，為了提供更多、更好的服務，雖然有政府社福預算的挹注，然而大環境景氣不佳且服務成本極高，都讓育成出現極大的資金缺口，但專業師資、照護人力、教學活動、弱勢家庭協助、職場重建基金等一個服務都不能少，為了支持育成繼續作下去，服務更多的智障兒，請您捐助支持「愛的馬拉松－心智障礙者終生支持募款計劃」，讓育成幫助更多慢飛天使快樂成長，勇敢迎向未來！'
     },
     {
         title: '花蓮偏鄉弱勢資源回收站焚毀重建',
         subtitle: '玉里天主堂',
         illustration: 'https://pgw.udn.com.tw/gw/photo.php?u=https://uc.udn.com.tw/photo/2020/02/22/realtime/7504145.jpg&x=0&y=0&sw=0&sh=0&sl=W&fw=800&exp=3600',
-        date:'Dec 11',
-        description:'花蓮偏鄉弱勢資源回收站焚毀重建'
-    },
+        date: 'Dec 11',
+        description: '來台傳道超過半世紀、今年79歲的花蓮玉里天主堂、安德啟智中心負責人劉一峰神父，長年在花蓮偏鄉透過資源回收工作，投入許多時間和心血，幫助那些流落街頭、無家可歸的社會邊緣人及弱勢貧困家庭得以自力更生。'
+            + '\n\n二月22日清晨六時，花蓮玉里天主堂附設資源回收站突然發生火警，位於一樓由鐵皮屋搭建的倉庫起火悶燒，倉庫屋頂整個被燒毀，裡頭儲放的二手衣物及書籍也全部付之一炬，幸好沒有造成任何人員傷亡，估計損失超過30-40萬。'
+            + '\n\n頂著一頭白髮的劉一峰神父，說著一口流利的中文，奉獻一生無私照顧台灣後山花蓮偏鄉的弱勢族群及社會邊緣人。在劉神父心中：「沒有任何一個物品是垃圾，也沒有任何人是應該被放棄的！」2017年，來台超過半世紀的劉一峰神父，終於拿到台灣身分證，成為道地的台灣人。他曾說：「我愛台灣，台灣就是我的家，我要一輩子住在台灣，直到生命終了的那一刻！」'
+    }
 ];
 
 export const ENTRIES2 = [//payment 
