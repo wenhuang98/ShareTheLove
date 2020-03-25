@@ -23,7 +23,12 @@
     "assetBundlePatterns": [
       "**/*"
     ],
+    "android": {
+      "package": "io.expo.ShareTheLove",
+      "versionCode": 1
+    },
     "ios": {
+      "bundleIdentifier": "io.expo.ShareTheLove",
       "supportsTablet": true
     }
   }
