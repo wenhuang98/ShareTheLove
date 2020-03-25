@@ -86,7 +86,8 @@ export default class PaymentScreen extends Component {
           paymentMethodId
         )
         if (ret.status === 'succeeded') {
-          // 未支付成功
+          console.log('payment succeeded')
+          // 支付成功
         }
       } catch (error) {
         // TODO: 支付出错
@@ -103,18 +104,13 @@ export default class PaymentScreen extends Component {
 
     getPaymentMethodId = async (creditCard) => {
       // 获取stripe的支付方式
-      let key = 'payment:paymentMethodId'
-      let paymentMethodId = await AsyncStorage.getItem(key)
-      if (!paymentMethodId) {
-        let res = await StripeApi.createPaymentMethod(
-          creditCard.number,
-          creditCard.cvc,
-          creditCard.expMonth,
-          creditCard.expYear
-        )
-        paymentMethodId = res.id
-        await AsyncStorage.setItem(key, paymentMethodId)
-      }
+      let res = await StripeApi.createPaymentMethod(
+        creditCard.number,
+        creditCard.cvc,
+        creditCard.expMonth,
+        creditCard.expYear
+      )
+      let paymentMethodId = res.id
       return paymentMethodId
     }
 
